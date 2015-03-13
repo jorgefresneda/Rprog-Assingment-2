@@ -17,19 +17,19 @@
 ## - get the value of the inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-i <- NULL
-set <- function(y) {
-x <<- y
-i <<- NULL
+      i <- NULL
+      set <- function(y) {
+        x <<- y
+        i <<- NULL
 }
-get <- function() x
-setinverse <- function(inv) i <<- inv
-getinverse <- function() i
-list(
-set = set,
-get = get,
-setinverse = setinverse,
-getinverse = getinverse
+      get <- function() x
+      setinverse <- function(inv) i <<- inv
+      getinverse <- function() i
+      list(
+      set = set,
+      get = get,
+      setinverse = setinverse,
+      getinverse = getinverse
 )
 }
 ## Calculate the inverse of the special "matrix" created with the above
